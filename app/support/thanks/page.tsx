@@ -1,10 +1,23 @@
-import Link from 'next/link';
+'use client';
 
-export default function SupportThanksPage({ searchParams }: { searchParams: Record<string, string | string[] | undefined> }) {
-  const receipt = typeof searchParams.receipt === 'string' ? searchParams.receipt : 'RC-DEMO';
-  const mode = typeof searchParams.mode === 'string' ? searchParams.mode : 'donate';
-  const amount = typeof searchParams.amount === 'string' ? searchParams.amount : '';
-  const tier = typeof searchParams.tier === 'string' ? searchParams.tier : '';
+import { Suspense } from 'react';
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
+
+export default function SupportThanksPage() {
+  return (
+    <Suspense fallback={<section className="mx-auto max-w-2xl rounded-2xl border border-stone-200 bg-white p-8 shadow-soft">Loading...</section>}>
+      <SupportThanksContent />
+    </Suspense>
+  );
+}
+
+function SupportThanksContent() {
+  const searchParams = useSearchParams();
+  const receipt = searchParams.get('receipt') || 'RC-DEMO';
+  const mode = searchParams.get('mode') || 'donate';
+  const amount = searchParams.get('amount') || '';
+  const tier = searchParams.get('tier') || '';
 
   return (
     <section className="mx-auto max-w-2xl rounded-2xl border border-stone-200 bg-white p-8 shadow-soft">

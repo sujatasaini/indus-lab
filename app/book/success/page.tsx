@@ -1,11 +1,24 @@
-import Link from 'next/link';
+'use client';
 
-export default function BookSuccessPage({ searchParams }: { searchParams: Record<string, string | string[] | undefined> }) {
-  const bookingId = typeof searchParams.bookingId === 'string' ? searchParams.bookingId : 'BK-DEMO';
-  const fullName = typeof searchParams.fullName === 'string' ? searchParams.fullName : 'Guest';
-  const date = typeof searchParams.date === 'string' ? searchParams.date : '-';
-  const ticketType = typeof searchParams.ticketType === 'string' ? searchParams.ticketType : '-';
-  const quantity = typeof searchParams.quantity === 'string' ? searchParams.quantity : '1';
+import { Suspense } from 'react';
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
+
+export default function BookSuccessPage() {
+  return (
+    <Suspense fallback={<section className="mx-auto max-w-2xl rounded-2xl border border-stone-200 bg-white p-8 shadow-soft">Loading...</section>}>
+      <BookSuccessContent />
+    </Suspense>
+  );
+}
+
+function BookSuccessContent() {
+  const searchParams = useSearchParams();
+  const bookingId = searchParams.get('bookingId') || 'BK-DEMO';
+  const fullName = searchParams.get('fullName') || 'Guest';
+  const date = searchParams.get('date') || '-';
+  const ticketType = searchParams.get('ticketType') || '-';
+  const quantity = searchParams.get('quantity') || '1';
 
   return (
     <section className="mx-auto max-w-2xl rounded-2xl border border-stone-200 bg-white p-8 shadow-soft">
