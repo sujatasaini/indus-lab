@@ -1,0 +1,20 @@
+[
+  {
+    "id": "bronze",
+    "name": "Bronze",
+    "amount": "¥20,000",
+    "benefits": ["Name listed on supporter wall", "Digital thank-you certificate"]
+  },
+  {
+    "id": "silver",
+    "name": "Silver",
+    "amount": "¥50,000",
+    "benefits": ["Bronze benefits", "Logo on event microsite", "2 VIP invites"]
+  },
+  {
+    "id": "gold",
+    "name": "Gold",
+    "amount": "¥100,000",
+    "benefits": ["Silver benefits", "Stage acknowledgment", "Private curator walkthrough"]
+  }
+]

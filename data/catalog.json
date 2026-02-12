@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "indus-history-sand-table",
+    "title": "Projector + sand table storytelling: Indus history timeline",
+    "description": "Interactive projection mapping over a tactile sand table narrating Indus milestones.",
+    "category": "Sand Show",
+    "image": "/images/sand-show.jpg",
+    "whyItMatters": "It makes deep history tangible and memorable through multisensory storytelling."
+  },
+  {
+    "slug": "indus-arts-motifs",
+    "title": "Indus-inspired motifs and prints",
+    "description": "A contemporary visual series drawing from script symbols and ancient geometry.",
+    "category": "Arts & Crafts",
+    "image": "/images/art-motifs.jpg",
+    "whyItMatters": "It bridges ancient sign systems with modern design language."
+  },
+  {
+    "slug": "handmade-indus-crafts",
+    "title": "Handmade crafts inspired by Indus signs",
+    "description": "Ceramic and textile pieces handcrafted from emblematic Indus motifs.",
+    "category": "Arts & Crafts",
+    "image": "/images/craft-01.jpg",
+    "whyItMatters": "It supports artisan practice while preserving visual heritage."
+  },
+  {
+    "slug": "phd-research-showcase",
+    "title": "My PhD research showcase: datasets + models (STHNet etc.)",
+    "description": "Research wall featuring OCR pipelines, multilingual datasets, and model outputs.",
+    "category": "Research",
+    "image": "/images/research-corner.jpg",
+    "whyItMatters": "It shows how AI can serve cultural preservation and scholarly access."
+  },
+  {
+    "slug": "research-booklet",
+    "title": "Research book / exhibition booklet",
+    "description": "Printed companion guide with essays, diagrams, and curated references.",
+    "category": "Books",
+    "image": "/images/research-book.jpg",
+    "whyItMatters": "It turns the exhibition into a reusable educational resource."
+  },
+  {
+    "slug": "indus-sign-goodies",
+    "title": "Bookmarks, stickers, postcards (Indus signs)",
+    "description": "Pocket-size keepsakes with carefully restored glyph illustrations.",
+    "category": "Goodies",
+    "image": "/images/goodies-bookmark.jpg",
+    "whyItMatters": "It helps visitors carry cultural symbols into daily life."
+  },
+  {
+    "slug": "limited-edition-merch-set",
+    "title": "Limited edition goodies set",
+    "description": "Collector bundle with premium prints, tote, and script-themed stationery.",
+    "category": "Goodies",
+    "image": "/images/goodies-set.jpg",
+    "whyItMatters": "It creates sustained community support for future exhibitions."
+  },
+  {
+    "slug": "script-fragment-reading-lab",
+    "title": "Script fragment reading lab",
+    "description": "Guided station exploring sign segmentation and pattern hypotheses.",
+    "category": "Research",
+    "image": "/images/research-lab.jpg",
+    "whyItMatters": "It invites audiences into active interpretation and critical inquiry."
+  }
+]
